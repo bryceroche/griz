@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <br></br>
+  <div class="jumbotron text-center">
+
+    <h1>Title Management</h1>
+    <p class="lead">Barber & Roche</p>
+    {% if request.session.logged_in == True %}
+      <a href="/predict" class="btn btn-success btn-lg">Predict</a>
+      <a href="/register" class="btn btn-primary btn-lg">Register</a>
+      <a href="/login" class="btn btn-success btn-lg">Login</a>
+    {% endif %}
+  </div>
+
+
+{% endblock %}

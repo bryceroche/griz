@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+ <script src='../static/client.js'></script>
+  <h1>Let the model finish your sentence</h1>
+  <div class='analyze'>
+    <label>Enter the beginning of a sentence</label>
+
+    <form action="theform">
+      <input type="text" name="name" id="uniqueID" value="Big Sky country" />
+        <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze</button>
+        </form>
+      </div>
+  <div class='result1'>
+        <label id='result1'></label>
+  </div>
+  <div class='result2'>
+        <label id='result2'></label>
+  </div>
+
+{% endblock %}
